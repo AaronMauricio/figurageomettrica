@@ -1,19 +1,15 @@
-class calor:
-    def __init__(self, nombre:
-    self._nombre = nombre
-
+class Color:
+    def __init__(self, valor):
+        self._nombre = valor
     def __str__(self):
-        return f'color: {self.__dict__.__str__()}'
-
+        return f"Color -> {self.__dict__.__str__()}"
     @property
     def nombre(self):
         return self._nombre
-
     @nombre.setter
     def nombre(self, nombre):
         self._nombre = nombre
 
-
-if __name__ == '__main__':
-    c1 = calor('morado')
-    print(c1)
+if __name__ == "__main__":
+        c1 = Color("Rojo")
+        print(c1)
