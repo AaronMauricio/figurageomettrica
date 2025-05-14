@@ -1,4 +1,4 @@
-class figurageometrica:
+class Figurageometrica:
 
     def __init__(self, alto, ancho):
         self._alto = alto
@@ -23,8 +23,8 @@ class figurageometrica:
         return 2 * self.alto + 2 * self.ancho
 
     def __str__(self):
-        return f'figurageometrica: {self.__dict__.__str__()}'
+        return f'Figurageometrica: {self.__dict__.__str__()}'
 
 if __name__ == '__main__':
-    fg = figurageometrica(8,5)
+    fg = Figurageometrica(8,5)
     print(fg)

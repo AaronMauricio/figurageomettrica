@@ -1,9 +1,9 @@
-from figurageometrica import figurageometrica
-from Color import Color
+from src.figurageometrica import Figurageometrica
+from src.color import Color
 
-class Rectangulo(figurageometrica):
-    def _init_(self, alto=0, ancho=0, color=None):
-        figurageometrica.__init__(self, alto, ancho)
+class Rectangulo(Figurageometrica):
+    def __init__(self, alto=0, ancho=0, color=None):
+        Figurageometrica.__init__(self, alto, ancho)
         Color.__init__(self,color)
 
     def area(self):
@@ -13,7 +13,7 @@ class Rectangulo(figurageometrica):
         return f"Rectángulo -> {self.__dict__.__str__()}"
 
 if __name__ == '__main__':
-    r1 = Rectangulo (alto=10, ancho=6, color="Rojo")
+    r1 = Rectangulo (alto=8, ancho=7, color="negro")
     print(r1)
     print(f'area: {r1.area()}')
     print(f'perimetro: {r1.perimetro()}')
